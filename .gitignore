@@ -1,0 +1,16 @@
+# Ignore local and build artifacts
+compass.db
+.env
+.env.local
+.venv
+venv/
+__pycache__/
+*.pyc
+node_modules/
+frontend/dist/
+dist/
+.DS_Store
+
+# Editor dirs
+.vscode/
+.idea/
