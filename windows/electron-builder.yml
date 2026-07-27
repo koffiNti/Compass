@@ -1,0 +1,28 @@
+appId: ai.compass.desktop
+productName: Compass AI OS
+copyright: Copyright © 2026 Compass AI Operating Systems Inc.
+directories:
+  output: dist
+  buildResources: build
+files:
+  - "main.js"
+  - "preload.js"
+  - "package.json"
+  - "../frontend/dist/**/*"
+  - "../backend/**/*"
+win:
+  target:
+    - target: portable
+      arch:
+        - x64
+    - target: nsis
+      arch:
+        - x64
+  forceCodeSigning: false
+  signAndEditExecutable: false
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: Compass AI OS
